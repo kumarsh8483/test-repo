@@ -36,7 +36,8 @@
 						}
 					},
 					"sink": {
-						"type": "AzureSqlSink"
+						"type": "AzureSqlSink",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"enableSkipIncompatibleRow": true,
@@ -118,18 +119,6 @@
 							},
 							{
 								"source": {
-									"name": "ModifiedDate",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ModifiedDate",
-									"type": "String",
-									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
 									"name": "Size",
 									"type": "String",
 									"physicalType": "String"
@@ -199,6 +188,18 @@
 									"type": "String",
 									"physicalType": "varchar"
 								}
+							},
+							{
+								"source": {
+									"name": "ModifiedDate",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ModifiedDate",
+									"type": "String",
+									"physicalType": "varchar"
+								}
 							}
 						],
 						"typeConversion": true,
@@ -216,7 +217,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_ovo",
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				]
