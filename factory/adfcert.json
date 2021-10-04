@@ -1,0 +1,9 @@
+{
+	"name": "adfcert",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "256b7d1c-ac69-4adb-a3c2-bb81833ae3be",
+		"tenantId": "14c47b18-fc55-4da5-98f0-1f17e206cadc"
+	}
+}
