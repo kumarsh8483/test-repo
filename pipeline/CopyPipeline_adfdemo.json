@@ -29,12 +29,10 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": "*",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings",
-							"skipLineCount": 0
+							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
@@ -212,7 +210,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceDataset_ovo",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				],
